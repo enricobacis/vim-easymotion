@@ -248,6 +248,8 @@ function! s:overwin.choose_prompt(hint_dict) abort
     redraw
     echo 'Target key: '
     let c = s:Input.getchar()
+    redraw
+    echo ''
     if self.config.use_upper
       let c = toupper(c)
     endif
